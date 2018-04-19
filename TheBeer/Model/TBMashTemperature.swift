@@ -16,6 +16,6 @@ struct TBMashTemperature: ImmutableMappable {
   
   init(map: Map) throws {
     self.temperature = try map.value("temp")
-    self.duration = try map.value("duration")
+    self.duration = try? map.value("duration")
   }
 }
