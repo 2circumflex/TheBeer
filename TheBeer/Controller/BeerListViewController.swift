@@ -179,6 +179,7 @@ extension BeerListViewController: UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let beer = self.beers[indexPath.row]
-    // TODO: 맥주 상세로 이동
+    let beerDetailViewController = BeerDetailViewController(beer: beer)
+    self.navigationController?.pushViewController(beerDetailViewController, animated: true)
   }
 }

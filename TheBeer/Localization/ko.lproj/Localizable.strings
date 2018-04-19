@@ -11,3 +11,21 @@
 "beer_list_navigation_title" = "목록";
 "beer_list_abv" = "알콜도수";
 "beer_list_no_information" = "정보없음";
+
+"beer_detail_navigation_title" = "상세정보";
+"beer_detail_no_information" = "정보없음";
+"beer_detail_name" = "이름";
+"beer_detail_tagline" = "태그라인";
+"beer_detail_firstBrewed" = "처음 양조한 날짜";
+"beer_detail_description" = "설명";
+"beer_detail_abv" = "알콜도수";
+"beer_detail_ibu" = "쓴정도";
+"beer_detail_srm" = "색깔지수";
+"beer_detail_volume" = "용량";
+"beer_detail_boilVolume" = "끊은 양?";
+"beer_detail_malt" = "맥아";
+"beer_detail_hops" = "홉";
+"beer_detail_yeast" = "이스트";
+"beer_detail_foodPairing" = "음식 짝";
+"beer_detail_brewersTips" = "양조업자 팁";
+"beer_detail_contributedBy" = "기여자";

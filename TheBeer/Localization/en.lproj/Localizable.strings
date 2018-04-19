@@ -11,3 +11,21 @@
 "beer_list_navigation_title" = "List";
 "beer_list_abv" = "abv";
 "beer_list_no_information" = "No information";
+
+"beer_detail_navigation_title" = "Detail";
+"beer_detail_no_information" = "No information";
+"beer_detail_name" = "Name";
+"beer_detail_tagline" = "Tag line";
+"beer_detail_firstBrewed" = "First brewed";
+"beer_detail_description" = "Description";
+"beer_detail_abv" = "ABV(Alcohol by volume)";
+"beer_detail_ibu" = "IBU(International Bittering Units)";
+"beer_detail_srm" = "SRM(Standard Reference Method)";
+"beer_detail_volume" = "Volume";
+"beer_detail_boilVolume" = "Boil Volume";
+"beer_detail_malt" = "Malt";
+"beer_detail_hops" = "Hops";
+"beer_detail_yeast" = "Yeast";
+"beer_detail_foodPairing" = "Food pairing";
+"beer_detail_brewersTips" = "Brewers tips";
+"beer_detail_contributedBy" = "Contributed by";

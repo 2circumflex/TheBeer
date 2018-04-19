@@ -24,6 +24,13 @@
 		864B2DD8208838FD00D2CAA9 /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B2DD6208838FC00D2CAA9 /* BeerListViewController.swift */; };
 		864B2DD9208838FD00D2CAA9 /* BeerListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 864B2DD7208838FC00D2CAA9 /* BeerListViewController.xib */; };
 		864B2DDB2088696700D2CAA9 /* TBProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B2DDA2088696700D2CAA9 /* TBProgressHUD.swift */; };
+		864B2DDE2088767F00D2CAA9 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B2DDC2088767F00D2CAA9 /* BeerDetailViewController.swift */; };
+		864B2DDF2088767F00D2CAA9 /* BeerDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 864B2DDD2088767F00D2CAA9 /* BeerDetailViewController.xib */; };
+		864B2DE1208880D000D2CAA9 /* EnumCollectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B2DE0208880D000D2CAA9 /* EnumCollectionProtocol.swift */; };
+		864B2DE4208881E600D2CAA9 /* BeerDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B2DE2208881E600D2CAA9 /* BeerDetailCell.swift */; };
+		864B2DE5208881E600D2CAA9 /* BeerDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 864B2DE3208881E600D2CAA9 /* BeerDetailCell.xib */; };
+		864B2DE7208897D500D2CAA9 /* BeerDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B2DE6208897D500D2CAA9 /* BeerDetailHeaderView.swift */; };
+		864B2DE9208897E900D2CAA9 /* BeerDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 864B2DE8208897E900D2CAA9 /* BeerDetailHeaderView.xib */; };
 		86ACC9B32086F3C0001418AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ACC9B22086F3C0001418AB /* AppDelegate.swift */; };
 		86ACC9B82086F3C0001418AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86ACC9B62086F3C0001418AB /* Main.storyboard */; };
 		86ACC9BA2086F3C1001418AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86ACC9B92086F3C1001418AB /* Assets.xcassets */; };
@@ -85,6 +92,13 @@
 		864B2DD6208838FC00D2CAA9 /* BeerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
 		864B2DD7208838FC00D2CAA9 /* BeerListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeerListViewController.xib; sourceTree = "<group>"; };
 		864B2DDA2088696700D2CAA9 /* TBProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBProgressHUD.swift; sourceTree = "<group>"; };
+		864B2DDC2088767F00D2CAA9 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
+		864B2DDD2088767F00D2CAA9 /* BeerDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerDetailViewController.xib; sourceTree = "<group>"; };
+		864B2DE0208880D000D2CAA9 /* EnumCollectionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumCollectionProtocol.swift; sourceTree = "<group>"; };
+		864B2DE2208881E600D2CAA9 /* BeerDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailCell.swift; sourceTree = "<group>"; };
+		864B2DE3208881E600D2CAA9 /* BeerDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerDetailCell.xib; sourceTree = "<group>"; };
+		864B2DE6208897D500D2CAA9 /* BeerDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailHeaderView.swift; sourceTree = "<group>"; };
+		864B2DE8208897E900D2CAA9 /* BeerDetailHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerDetailHeaderView.xib; sourceTree = "<group>"; };
 		86ACC9AF2086F3C0001418AB /* TheBeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86ACC9B22086F3C0001418AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86ACC9B72086F3C0001418AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -220,6 +234,8 @@
 			children = (
 				864B2DD6208838FC00D2CAA9 /* BeerListViewController.swift */,
 				864B2DD7208838FC00D2CAA9 /* BeerListViewController.xib */,
+				864B2DDC2088767F00D2CAA9 /* BeerDetailViewController.swift */,
+				864B2DDD2088767F00D2CAA9 /* BeerDetailViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -229,6 +245,10 @@
 			children = (
 				864B2DD2208838F000D2CAA9 /* BeerListCell.swift */,
 				864B2DD3208838F000D2CAA9 /* BeerListCell.xib */,
+				864B2DE2208881E600D2CAA9 /* BeerDetailCell.swift */,
+				864B2DE3208881E600D2CAA9 /* BeerDetailCell.xib */,
+				864B2DE6208897D500D2CAA9 /* BeerDetailHeaderView.swift */,
+				864B2DE8208897E900D2CAA9 /* BeerDetailHeaderView.xib */,
 				864B2DDA2088696700D2CAA9 /* TBProgressHUD.swift */,
 			);
 			path = View;
@@ -292,6 +312,7 @@
 		86ACC9F12086F49B001418AB /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				864B2DE0208880D000D2CAA9 /* EnumCollectionProtocol.swift */,
 				864B2DBC2088347600D2CAA9 /* NSObject+Common.swift */,
 				86ACCA0B2086F649001418AB /* Bool+Common.swift */,
 				86ACCA0A2086F649001418AB /* Collection+Common.swift */,
@@ -462,9 +483,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				864B2DDF2088767F00D2CAA9 /* BeerDetailViewController.xib in Resources */,
+				864B2DE9208897E900D2CAA9 /* BeerDetailHeaderView.xib in Resources */,
 				86ACC9F82086F4F1001418AB /* Localizable.strings in Resources */,
 				86ACC9BD2086F3C1001418AB /* LaunchScreen.storyboard in Resources */,
 				86ACC9F42086F4EC001418AB /* InfoPlist.strings in Resources */,
+				864B2DE5208881E600D2CAA9 /* BeerDetailCell.xib in Resources */,
 				86ACC9BA2086F3C1001418AB /* Assets.xcassets in Resources */,
 				864B2DD9208838FD00D2CAA9 /* BeerListViewController.xib in Resources */,
 				864B2DD5208838F100D2CAA9 /* BeerListCell.xib in Resources */,
@@ -543,6 +567,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				864B2DE4208881E600D2CAA9 /* BeerDetailCell.swift in Sources */,
 				864B2DCC2088373400D2CAA9 /* TBMethod.swift in Sources */,
 				864B2DCB2088373400D2CAA9 /* TBMashTemperature.swift in Sources */,
 				86ACCA152086F649001418AB /* Data+Common.swift in Sources */,
@@ -552,6 +577,7 @@
 				864B2DC62088373400D2CAA9 /* TBValueUnit.swift in Sources */,
 				86ACCA0D2086F649001418AB /* String+Common.swift in Sources */,
 				864B2DC72088373400D2CAA9 /* TBIngredient.swift in Sources */,
+				864B2DE7208897D500D2CAA9 /* BeerDetailHeaderView.swift in Sources */,
 				86ACCA112086F649001418AB /* Font+Common.swift in Sources */,
 				86ACCA122086F649001418AB /* NSLayoutConstraint+Common.swift in Sources */,
 				86ACCA132086F649001418AB /* Date+Common.swift in Sources */,
@@ -567,7 +593,9 @@
 				86ACCA192087057C001418AB /* TBConstant.swift in Sources */,
 				86ACCA172086F649001418AB /* Bool+Common.swift in Sources */,
 				86ACCA0C2086F649001418AB /* Int+Common.swift in Sources */,
+				864B2DE1208880D000D2CAA9 /* EnumCollectionProtocol.swift in Sources */,
 				86ACCA3A208736B6001418AB /* TBDebug.swift in Sources */,
+				864B2DDE2088767F00D2CAA9 /* BeerDetailViewController.swift in Sources */,
 				864B2DD4208838F100D2CAA9 /* BeerListCell.swift in Sources */,
 				864B2DCD2088373400D2CAA9 /* TBBeer.swift in Sources */,
 				86ACCA162086F649001418AB /* Collection+Common.swift in Sources */,
