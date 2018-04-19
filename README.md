@@ -1,6 +1,6 @@
 # TheBeer
 
-https://punkapi.com API를 이용한 코딩과제입니다.
+https://punkapi.com - API를 이용한 코딩과제입니다.
 
 ## 개발환경
 * Swift 4.1
