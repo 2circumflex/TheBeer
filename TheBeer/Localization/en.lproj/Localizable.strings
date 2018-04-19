@@ -7,3 +7,7 @@
  */
 
 "the_beer" = "TheBeer";
+
+"beer_list_navigation_title" = "List";
+"beer_list_abv" = "abv";
+"beer_list_no_information" = "No information";

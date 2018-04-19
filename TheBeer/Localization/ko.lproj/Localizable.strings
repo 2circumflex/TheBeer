@@ -7,3 +7,7 @@
  */
 
 "the_beer" = "비어";
+
+"beer_list_navigation_title" = "목록";
+"beer_list_abv" = "알콜도수";
+"beer_list_no_information" = "정보없음";
