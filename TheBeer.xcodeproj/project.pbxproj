@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		0A2181A47E4C32024E2032F7 /* Pods_TheBeer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24D6A8ADDC4957931BDE891 /* Pods_TheBeer.framework */; };
 		864B2DBD2088347600D2CAA9 /* NSObject+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B2DBC2088347600D2CAA9 /* NSObject+Common.swift */; };
+		864B2DC62088373400D2CAA9 /* TBValueUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B2DBE2088373300D2CAA9 /* TBValueUnit.swift */; };
+		864B2DC72088373400D2CAA9 /* TBIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B2DBF2088373400D2CAA9 /* TBIngredient.swift */; };
+		864B2DC82088373400D2CAA9 /* TBHop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B2DC02088373400D2CAA9 /* TBHop.swift */; };
+		864B2DC92088373400D2CAA9 /* TBFermentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B2DC12088373400D2CAA9 /* TBFermentation.swift */; };
+		864B2DCA2088373400D2CAA9 /* TBMalt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B2DC22088373400D2CAA9 /* TBMalt.swift */; };
+		864B2DCB2088373400D2CAA9 /* TBMashTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B2DC32088373400D2CAA9 /* TBMashTemperature.swift */; };
+		864B2DCC2088373400D2CAA9 /* TBMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B2DC42088373400D2CAA9 /* TBMethod.swift */; };
+		864B2DCD2088373400D2CAA9 /* TBBeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B2DC52088373400D2CAA9 /* TBBeer.swift */; };
 		86ACC9B32086F3C0001418AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ACC9B22086F3C0001418AB /* AppDelegate.swift */; };
 		86ACC9B82086F3C0001418AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86ACC9B62086F3C0001418AB /* Main.storyboard */; };
 		86ACC9BA2086F3C1001418AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86ACC9B92086F3C1001418AB /* Assets.xcassets */; };
@@ -55,6 +63,14 @@
 		3C10C61B6A7D7B39A3211959 /* Pods-TheBeer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBeer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheBeer/Pods-TheBeer.debug.xcconfig"; sourceTree = "<group>"; };
 		561012594DD706AA2617EF01 /* Pods-TheBeer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBeer.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheBeer/Pods-TheBeer.release.xcconfig"; sourceTree = "<group>"; };
 		864B2DBC2088347600D2CAA9 /* NSObject+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Common.swift"; sourceTree = "<group>"; };
+		864B2DBE2088373300D2CAA9 /* TBValueUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBValueUnit.swift; sourceTree = "<group>"; };
+		864B2DBF2088373400D2CAA9 /* TBIngredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBIngredient.swift; sourceTree = "<group>"; };
+		864B2DC02088373400D2CAA9 /* TBHop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBHop.swift; sourceTree = "<group>"; };
+		864B2DC12088373400D2CAA9 /* TBFermentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBFermentation.swift; sourceTree = "<group>"; };
+		864B2DC22088373400D2CAA9 /* TBMalt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBMalt.swift; sourceTree = "<group>"; };
+		864B2DC32088373400D2CAA9 /* TBMashTemperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBMashTemperature.swift; sourceTree = "<group>"; };
+		864B2DC42088373400D2CAA9 /* TBMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBMethod.swift; sourceTree = "<group>"; };
+		864B2DC52088373400D2CAA9 /* TBBeer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBBeer.swift; sourceTree = "<group>"; };
 		86ACC9AF2086F3C0001418AB /* TheBeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86ACC9B22086F3C0001418AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86ACC9B72086F3C0001418AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -202,6 +218,14 @@
 		86ACC9E32086F3E4001418AB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				864B2DC52088373400D2CAA9 /* TBBeer.swift */,
+				864B2DC12088373400D2CAA9 /* TBFermentation.swift */,
+				864B2DC02088373400D2CAA9 /* TBHop.swift */,
+				864B2DBF2088373400D2CAA9 /* TBIngredient.swift */,
+				864B2DC22088373400D2CAA9 /* TBMalt.swift */,
+				864B2DC32088373400D2CAA9 /* TBMashTemperature.swift */,
+				864B2DC42088373400D2CAA9 /* TBMethod.swift */,
+				864B2DBE2088373300D2CAA9 /* TBValueUnit.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -495,21 +519,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				864B2DCC2088373400D2CAA9 /* TBMethod.swift in Sources */,
+				864B2DCB2088373400D2CAA9 /* TBMashTemperature.swift in Sources */,
 				86ACCA152086F649001418AB /* Data+Common.swift in Sources */,
+				864B2DC92088373400D2CAA9 /* TBFermentation.swift in Sources */,
 				86ACCA102086F649001418AB /* Double+Common.swift in Sources */,
 				864B2DBD2088347600D2CAA9 /* NSObject+Common.swift in Sources */,
+				864B2DC62088373400D2CAA9 /* TBValueUnit.swift in Sources */,
 				86ACCA0D2086F649001418AB /* String+Common.swift in Sources */,
+				864B2DC72088373400D2CAA9 /* TBIngredient.swift in Sources */,
 				86ACCA112086F649001418AB /* Font+Common.swift in Sources */,
 				86ACCA122086F649001418AB /* NSLayoutConstraint+Common.swift in Sources */,
 				86ACCA132086F649001418AB /* Date+Common.swift in Sources */,
 				86ACCA3120873266001418AB /* FloatingPoint+Common.swift in Sources */,
 				86ACCA142086F649001418AB /* URL+Common.swift in Sources */,
+				864B2DC82088373400D2CAA9 /* TBHop.swift in Sources */,
+				864B2DCA2088373400D2CAA9 /* TBMalt.swift in Sources */,
 				86ACCA0F2086F649001418AB /* UIImage+Common.swift in Sources */,
 				86ACC9FD2086F534001418AB /* UITableView+Common.swift in Sources */,
 				86ACCA192087057C001418AB /* TBConstant.swift in Sources */,
 				86ACCA172086F649001418AB /* Bool+Common.swift in Sources */,
 				86ACCA0C2086F649001418AB /* Int+Common.swift in Sources */,
 				86ACCA3A208736B6001418AB /* TBDebug.swift in Sources */,
+				864B2DCD2088373400D2CAA9 /* TBBeer.swift in Sources */,
 				86ACCA162086F649001418AB /* Collection+Common.swift in Sources */,
 				86ACC9B32086F3C0001418AB /* AppDelegate.swift in Sources */,
 			);
