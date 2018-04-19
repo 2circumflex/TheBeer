@@ -60,9 +60,8 @@ extension TheBeerService: TargetType {
     switch self {
     case let .beer(id):
       return "/beers/\(id)"
-    case let .beers(pagination, param):
-      let parameterString = self.beersParameters(pagination: pagination, param: param)
-      return "/beers?\(parameterString)"
+    case .beers:
+      return "/beers"
     case .random:
       return "/beers/random"
     }
@@ -77,8 +76,77 @@ extension TheBeerService: TargetType {
   
   var task: Task {
     switch self {
-    case .beer, .beers, .random:
+    case .beer, .random:
       return .requestPlain
+    case let .beers(pagination, param):
+      var parameters = [String: Any]()
+      
+      if let pagination = pagination {
+        parameters["page"] = pagination.page
+        parameters["per_page"] = pagination.perPage
+      }
+      
+      if let param = param {
+        if let abvGreaterThan = param.abvGreaterThan {
+          parameters["abv_gt"] = abvGreaterThan
+        }
+        if let abvLessThan = param.abvLessThan {
+          parameters["abv_lt"] = abvLessThan
+        }
+        if let ibuGreaterThan = param.ibuGreaterThan {
+          parameters["ibu_gt"] = ibuGreaterThan
+        }
+        if let ibuLessThan = param.ibuLessThan {
+          parameters["ibu_lt"] = ibuLessThan
+        }
+        if let ebcGreaterThan = param.ebcGreaterThan {
+          parameters["ebc_gt"] = ebcGreaterThan
+        }
+        if let ebcLessThan = param.ebcLessThan {
+          parameters["ebc_lt"] = ebcLessThan
+        }
+        
+        if let beerName = param.beerName {
+          let beerNameString = beerName.replace(target: " ", withString: "_")
+          parameters["beer_name"] = beerNameString
+        }
+        if let yeast = param.yeast {
+          let yeastString = yeast.replace(target: " ", withString: "_")
+          parameters["yeast"] = yeastString
+        }
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "mm-yyyy"
+        dateFormatter.timeZone = NSTimeZone.system
+        if let brewedBefore = param.brewedBefore {
+          let brewedBeforeString = dateFormatter.string(from: brewedBefore)
+          parameters["brewed_before"] = brewedBeforeString
+        }
+        if let brewedAfter = param.brewedAfter {
+          let brewedAfterString = dateFormatter.string(from: brewedAfter)
+          parameters["brewed_after"] = brewedAfterString
+        }
+        
+        if let hops = param.hops {
+          let hopsString = hops.replace(target: " ", withString: "_")
+          parameters["hops"] = hopsString
+        }
+        if let malt = param.malt {
+          let maltString = malt.replace(target: " ", withString: "_")
+          parameters["malt"] = maltString
+        }
+        if let food = param.food {
+          let foodString = food.replace(target: " ", withString: "_")
+          parameters["food"] = foodString
+        }
+        
+        if let ids = param.ids {
+          let value = ids.map({ String($0) }).joined(separator: "|")
+          parameters["ids"] = value
+        }
+      }
+      
+      return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
     }
   }
   
@@ -94,77 +162,6 @@ extension TheBeerService: TargetType {
     case .beer, .beers, .random:
       return nil
     }
-  }
-  
-  private func beersParameters(pagination: Pagination?, param: Param?) -> String {
-    var parameters: [String] = []
-    
-    if let pagination = pagination {
-      parameters.append("page=\(pagination.page)")
-      parameters.append("per_page=\(pagination.perPage)")
-    }
-    
-    if let param = param {
-      if let abvGreaterThan = param.abvGreaterThan {
-        parameters.append("abv_gt=\(abvGreaterThan)")
-      }
-      if let abvLessThan = param.abvLessThan {
-        parameters.append("abv_lt=\(abvLessThan)")
-      }
-      if let ibuGreaterThan = param.ibuGreaterThan {
-        parameters.append("ibu_gt=\(ibuGreaterThan)")
-      }
-      if let ibuLessThan = param.ibuLessThan {
-        parameters.append("ibu_lt=\(ibuLessThan)")
-      }
-      if let ebcGreaterThan = param.ebcGreaterThan {
-        parameters.append("ebc_gt=\(ebcGreaterThan)")
-      }
-      if let ebcLessThan = param.ebcLessThan {
-        parameters.append("ebc_lt=\(ebcLessThan)")
-      }
-      
-      if let beerName = param.beerName {
-        let beerNameString = beerName.replace(target: " ", withString: "_")
-        parameters.append("beer_name=\(beerNameString)")
-      }
-      if let yeast = param.yeast {
-        let yeastString = yeast.replace(target: " ", withString: "_")
-        parameters.append("yeast=\(yeastString)")
-      }
-      
-      let dateFormatter = DateFormatter()
-      dateFormatter.dateFormat = "mm-yyyy"
-      dateFormatter.timeZone = NSTimeZone.system
-      if let brewedBefore = param.brewedBefore {
-        let brewedBeforeString = dateFormatter.string(from: brewedBefore)
-        parameters.append("brewed_before=\(brewedBeforeString)")
-      }
-      if let brewedAfter = param.brewedAfter {
-        let brewedAfterString = dateFormatter.string(from: brewedAfter)
-        parameters.append("brewed_after=\(brewedAfterString)")
-      }
-      
-      if let hops = param.hops {
-        let hopsString = hops.replace(target: " ", withString: "_")
-        parameters.append("hops=\(hopsString)")
-      }
-      if let malt = param.malt {
-        let maltString = malt.replace(target: " ", withString: "_")
-        parameters.append("malt=\(maltString)")
-      }
-      if let food = param.food {
-        let foodString = food.replace(target: " ", withString: "_")
-        parameters.append("food=\(foodString)")
-      }
-      
-      if let ids = param.ids {
-        let value = ids.map({ String($0) }).joined(separator: "|")
-        parameters.append("ids=\(value)")
-      }
-    }
-    
-    return parameters.joined(separator: "&")
   }
 }
 
