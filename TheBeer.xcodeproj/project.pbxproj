@@ -40,17 +40,7 @@
 		86ACC9F42086F4EC001418AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86ACC9F62086F4EC001418AB /* InfoPlist.strings */; };
 		86ACC9F82086F4F1001418AB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86ACC9FA2086F4F1001418AB /* Localizable.strings */; };
 		86ACC9FD2086F534001418AB /* UITableView+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ACC9FC2086F534001418AB /* UITableView+Common.swift */; };
-		86ACCA0C2086F649001418AB /* Int+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ACCA002086F649001418AB /* Int+Common.swift */; };
 		86ACCA0D2086F649001418AB /* String+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ACCA012086F649001418AB /* String+Common.swift */; };
-		86ACCA0F2086F649001418AB /* UIImage+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ACCA032086F649001418AB /* UIImage+Common.swift */; };
-		86ACCA102086F649001418AB /* Double+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ACCA042086F649001418AB /* Double+Common.swift */; };
-		86ACCA112086F649001418AB /* Font+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ACCA052086F649001418AB /* Font+Common.swift */; };
-		86ACCA122086F649001418AB /* NSLayoutConstraint+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ACCA062086F649001418AB /* NSLayoutConstraint+Common.swift */; };
-		86ACCA132086F649001418AB /* Date+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ACCA072086F649001418AB /* Date+Common.swift */; };
-		86ACCA142086F649001418AB /* URL+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ACCA082086F649001418AB /* URL+Common.swift */; };
-		86ACCA152086F649001418AB /* Data+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ACCA092086F649001418AB /* Data+Common.swift */; };
-		86ACCA162086F649001418AB /* Collection+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ACCA0A2086F649001418AB /* Collection+Common.swift */; };
-		86ACCA172086F649001418AB /* Bool+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ACCA0B2086F649001418AB /* Bool+Common.swift */; };
 		86ACCA192087057C001418AB /* TBConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ACCA182087057C001418AB /* TBConstant.swift */; };
 		86ACCA3120873266001418AB /* FloatingPoint+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ACCA3020873266001418AB /* FloatingPoint+Common.swift */; };
 		86ACCA3A208736B6001418AB /* TBDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ACCA39208736B6001418AB /* TBDebug.swift */; };
@@ -118,17 +108,7 @@
 		86ACC9F92086F4F1001418AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		86ACC9FB2086F4F2001418AB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		86ACC9FC2086F534001418AB /* UITableView+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Common.swift"; sourceTree = "<group>"; };
-		86ACCA002086F649001418AB /* Int+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Common.swift"; sourceTree = "<group>"; };
 		86ACCA012086F649001418AB /* String+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Common.swift"; sourceTree = "<group>"; };
-		86ACCA032086F649001418AB /* UIImage+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Common.swift"; sourceTree = "<group>"; };
-		86ACCA042086F649001418AB /* Double+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Common.swift"; sourceTree = "<group>"; };
-		86ACCA052086F649001418AB /* Font+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font+Common.swift"; sourceTree = "<group>"; };
-		86ACCA062086F649001418AB /* NSLayoutConstraint+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Common.swift"; sourceTree = "<group>"; };
-		86ACCA072086F649001418AB /* Date+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Common.swift"; sourceTree = "<group>"; };
-		86ACCA082086F649001418AB /* URL+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Common.swift"; sourceTree = "<group>"; };
-		86ACCA092086F649001418AB /* Data+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Common.swift"; sourceTree = "<group>"; };
-		86ACCA0A2086F649001418AB /* Collection+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Common.swift"; sourceTree = "<group>"; };
-		86ACCA0B2086F649001418AB /* Bool+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool+Common.swift"; sourceTree = "<group>"; };
 		86ACCA182087057C001418AB /* TBConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBConstant.swift; sourceTree = "<group>"; };
 		86ACCA3020873266001418AB /* FloatingPoint+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+Common.swift"; sourceTree = "<group>"; };
 		86ACCA39208736B6001418AB /* TBDebug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBDebug.swift; sourceTree = "<group>"; };
@@ -314,17 +294,7 @@
 			children = (
 				864B2DE0208880D000D2CAA9 /* EnumCollectionProtocol.swift */,
 				864B2DBC2088347600D2CAA9 /* NSObject+Common.swift */,
-				86ACCA0B2086F649001418AB /* Bool+Common.swift */,
-				86ACCA0A2086F649001418AB /* Collection+Common.swift */,
-				86ACCA092086F649001418AB /* Data+Common.swift */,
-				86ACCA072086F649001418AB /* Date+Common.swift */,
-				86ACCA042086F649001418AB /* Double+Common.swift */,
-				86ACCA052086F649001418AB /* Font+Common.swift */,
-				86ACCA002086F649001418AB /* Int+Common.swift */,
-				86ACCA062086F649001418AB /* NSLayoutConstraint+Common.swift */,
 				86ACCA012086F649001418AB /* String+Common.swift */,
-				86ACCA032086F649001418AB /* UIImage+Common.swift */,
-				86ACCA082086F649001418AB /* URL+Common.swift */,
 				86ACC9FC2086F534001418AB /* UITableView+Common.swift */,
 				86ACCA3020873266001418AB /* FloatingPoint+Common.swift */,
 			);
@@ -570,35 +540,25 @@
 				864B2DE4208881E600D2CAA9 /* BeerDetailCell.swift in Sources */,
 				864B2DCC2088373400D2CAA9 /* TBMethod.swift in Sources */,
 				864B2DCB2088373400D2CAA9 /* TBMashTemperature.swift in Sources */,
-				86ACCA152086F649001418AB /* Data+Common.swift in Sources */,
 				864B2DC92088373400D2CAA9 /* TBFermentation.swift in Sources */,
-				86ACCA102086F649001418AB /* Double+Common.swift in Sources */,
 				864B2DBD2088347600D2CAA9 /* NSObject+Common.swift in Sources */,
 				864B2DC62088373400D2CAA9 /* TBValueUnit.swift in Sources */,
 				86ACCA0D2086F649001418AB /* String+Common.swift in Sources */,
 				864B2DC72088373400D2CAA9 /* TBIngredient.swift in Sources */,
 				864B2DE7208897D500D2CAA9 /* BeerDetailHeaderView.swift in Sources */,
-				86ACCA112086F649001418AB /* Font+Common.swift in Sources */,
-				86ACCA122086F649001418AB /* NSLayoutConstraint+Common.swift in Sources */,
-				86ACCA132086F649001418AB /* Date+Common.swift in Sources */,
 				86ACCA3120873266001418AB /* FloatingPoint+Common.swift in Sources */,
-				86ACCA142086F649001418AB /* URL+Common.swift in Sources */,
 				864B2DC82088373400D2CAA9 /* TBHop.swift in Sources */,
 				864B2DCF208837B200D2CAA9 /* TheBeerService.swift in Sources */,
 				864B2DD8208838FD00D2CAA9 /* BeerListViewController.swift in Sources */,
 				864B2DCA2088373400D2CAA9 /* TBMalt.swift in Sources */,
-				86ACCA0F2086F649001418AB /* UIImage+Common.swift in Sources */,
 				864B2DDB2088696700D2CAA9 /* TBProgressHUD.swift in Sources */,
 				86ACC9FD2086F534001418AB /* UITableView+Common.swift in Sources */,
 				86ACCA192087057C001418AB /* TBConstant.swift in Sources */,
-				86ACCA172086F649001418AB /* Bool+Common.swift in Sources */,
-				86ACCA0C2086F649001418AB /* Int+Common.swift in Sources */,
 				864B2DE1208880D000D2CAA9 /* EnumCollectionProtocol.swift in Sources */,
 				86ACCA3A208736B6001418AB /* TBDebug.swift in Sources */,
 				864B2DDE2088767F00D2CAA9 /* BeerDetailViewController.swift in Sources */,
 				864B2DD4208838F100D2CAA9 /* BeerListCell.swift in Sources */,
 				864B2DCD2088373400D2CAA9 /* TBBeer.swift in Sources */,
-				86ACCA162086F649001418AB /* Collection+Common.swift in Sources */,
 				86ACC9B32086F3C0001418AB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
